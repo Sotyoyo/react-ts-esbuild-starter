@@ -1,58 +1,27 @@
 module.exports = {
-  root: true,
-  parser: '@typescript-eslint/parser',
-  // ignorePatterns: ['.eslintrc.js'], // Add this to solve error from project option
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
+    env: {
+        browser: true,
+        es2021: true,
+        node: true,
+        jest: true,
     },
-    project: [
-      './tsconfig.json',
-      './tsconfig.eslint.json',
-    ], // Specify project when you want to use rules which require type information. EX. plugin:@typescript-eslint as extends
-  },
-  settings: {
-    react: {
-      version: 'detect',
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:react/jsx-runtime', // If you are using the new JSX transform from React 17, extend react/jsx-runtime in your eslint config (add "plugin:react/jsx-runtime" to "extends") to disable the relevant rules.
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 2020,
+        sourceType: 'module',
+        tsconfigRootDir: './',
+        project: ['./tsconfig.json', './tsconfig.eslint.json'], // Specify project when you want to use rules which require type information. EX. plugin:@typescript-eslint as extends
     },
-  },
-  env: {
-    browser: true,
-    amd: true,
-    node: true,
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    // 'plugin:react-hooks/recommended',
-    // 'plugin:jsx-a11y/recommended',
-    // 'plugin:jest/recommended',
-    'plugin:@typescript-eslint/recommended', // Add this to solve `Parsing error: '>' expected.eslint` error
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    // 'plugin:prettier/recommended', // Make sure this is always the last element in the array.
-  ],
-  plugins: [
-    'simple-import-sort',
-    // 'prettier'
-  ],
-  rules: {
-    "no-console": "off",
-    // 'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    // 'react/react-in-jsx-scope': 'off',
-    // 'jsx-a11y/accessible-emoji': 'off',
-    // 'react/prop-types': 'off',
-    // '@typescript-eslint/explicit-function-return-type': 'off',
-    // 'simple-import-sort/imports': 'error',
-    // 'simple-import-sort/exports': 'error',
-    // 'jsx-a11y/anchor-is-valid': [
-    //   'error',
-    //   {
-    //     components: ['Link'],
-    //     specialLink: ['hrefLeft', 'hrefRight'],
-    //     aspects: ['invalidHref', 'preferButton'],
-    //   },
-    // ],
-  },
+    plugins: ['react', '@typescript-eslint'],
+    rules: {},
 };

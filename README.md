@@ -2,6 +2,12 @@
 
 * https://github.com/AlloyTeam/eslint-config-alloy#typescript-react
 
+
+### eslint-lougin-react
+* https://github.com/yannickcr/eslint-plugin-react
+
+
+
 ### TypeScript & React
 
 `pnpm install --save-dev eslint typescript @typescript-eslint/parser eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-simple-import-sort @typescript-eslint/eslint-plugin -D`
