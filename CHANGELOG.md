@@ -12,3 +12,17 @@ devDependencies:
 + eslint-plugin-react 7.27.1
 + prettier 2.5.1
 + typescript 4.5.4
+
+
+## 0.0.2 
+- web-vitals https://web.dev/
++ web-vitals 2.1.2
+
+- add prettier check in eslint
++ eslint-config-prettier 8.3.0
++ eslint-plugin-prettier 4.0.0
++ eslint-plugin-react-hooks 4.3.0
+
+- Formats your JavaScript using prettier followed by eslint --fix
++ prettier-eslint 13.0.0
+
