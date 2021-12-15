@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default (props) => {
-    return <h1>hello world</h1>
-}
+const App: React.Component = (): JSX.Element => {
+    return <h1>hello world</h1>;
+};
+
+export default App;
