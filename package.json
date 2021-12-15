@@ -1,13 +1,13 @@
 {
     "name": "react-ts-esbuild-starter",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "a starter for react & ts & esbuild",
     "main": "index.js",
     "scripts": {
         "test": "",
         "format": "prettier --write src/**/*.ts{,x}",
         "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-        "dev": ""
+        "dev": "node build/dev.js"
     },
     "keywords": [
         "react",
