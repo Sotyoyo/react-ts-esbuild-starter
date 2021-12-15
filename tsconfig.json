@@ -33,13 +33,13 @@
     },
     "include": [
         "src",
-        "config/**/*",
+        "build",
+        "config",
+        "workers",
         "mock/_createProductionServer.ts"
     ],
     "exclude": [
         "node_modules",
-        "build",
         "dist",
-        // "**/*.js"
     ]
 }
