@@ -1,0 +1,34 @@
+{
+    "name": "react-ts-esbuild-starter",
+    "version": "0.0.1",
+    "description": "a starter for react & ts & esbuild",
+    "main": "index.js",
+    "scripts": {
+        "test": ""
+    },
+    "keywords": [
+        "react",
+        "typescript",
+        "ts",
+        "esbuild",
+        "kit",
+        "example",
+        "demo",
+        "starter"
+    ],
+    "author": "Sheldon",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^16.11.12",
+        "@typescript-eslint/eslint-plugin": "^5.7.0",
+        "@typescript-eslint/parser": "^5.7.0",
+        "eslint": "^8.4.1",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
+}
